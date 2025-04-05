@@ -14,3 +14,10 @@ export default function useLocalStorage(key, initialValue) {
   useEffect(() => {
     try {
       localStorage.setItem(key, JSON.stringify(value))
+    } catch {
+      // storage might be blocked, the app still works without saving
+    }
+  }, [key, value])
+
+  return [value, setValue]
+}
