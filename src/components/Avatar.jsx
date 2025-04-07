@@ -4,3 +4,5 @@ export default function Avatar({ name, size = 80 }) {
     <div className="avatar" style={{ width: size, height: size, fontSize: size / 2.8 }}>
       {initials}
     </div>
+  )
+}
