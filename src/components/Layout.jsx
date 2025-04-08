@@ -13,3 +13,18 @@ const links = [
 export default function Layout() {
   const { saved } = useMySchedule()
   const [open, setOpen] = useState(false)
+
+  return (
+    <>
+      <header className="header">
+        <div className="container header-inner">
+          <Link to="/" className="logo">
+            <span className="logo-mark">∞</span> Arduino Day PH
+          </Link>
+          <button className="menu-btn" onClick={() => setOpen(!open)} aria-label="Toggle menu">☰</button>
+          <nav className={open ? 'nav open' : 'nav'} onClick={() => setOpen(false)}>
+            {links.map((l) => (
+              <NavLink key={l.to} to={l.to} end={l.end} className={({ isActive }) => (isActive ? 'active' : '')}>
+                {l.label}
+              </NavLink>
+            ))}
