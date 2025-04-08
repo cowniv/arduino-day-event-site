@@ -28,3 +28,18 @@ export default function Layout() {
                 {l.label}
               </NavLink>
             ))}
+            <NavLink to="/my-schedule" className={({ isActive }) => (isActive ? 'pill active' : 'pill')}>
+              My Schedule <span className="count">{saved.length}</span>
+            </NavLink>
+          </nav>
+        </div>
+      </header>
+      <main className="container page">
+        <Outlet />
+      </main>
+      <footer className="footer">
+        <p>Arduino Day Philippines 2025 · practice rebuild by Ivy</p>
+      </footer>
+    </>
+  )
+}
