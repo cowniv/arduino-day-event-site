@@ -7,3 +7,12 @@ export default function SessionCard({ session }) {
   const speaker = speakers.find((s) => s.id === session.speakerId)
   const saved = isSaved(session.id)
 
+  return (
+    <article className={saved ? 'session saved' : 'session'}>
+      <div className="session-time">
+        <strong>{session.time}</strong>
+        <small>{session.end}</small>
+      </div>
+      <div className="session-body">
+        <span className="tag">{session.track}</span>
+        <h3>{session.title}</h3>
