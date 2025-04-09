@@ -16,3 +16,11 @@ export default function SessionCard({ session }) {
       <div className="session-body">
         <span className="tag">{session.track}</span>
         <h3>{session.title}</h3>
+        {speaker && <Link to={`/speakers/${speaker.id}`}>{speaker.name}</Link>}
+      </div>
+      <button className={saved ? 'btn btn-outline' : 'btn'} onClick={() => toggle(session.id)}>
+        {saved ? '✓ Added' : '+ Add'}
+      </button>
+    </article>
+  )
+}
