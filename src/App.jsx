@@ -16,3 +16,12 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="schedule" element={<Schedule />} />
         <Route path="speakers" element={<Speakers />} />
+        <Route path="speakers/:id" element={<SpeakerDetail />} />
+        <Route path="workshops" element={<Workshops />} />
+        <Route path="venue" element={<Venue />} />
+        <Route path="my-schedule" element={<MySchedule />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
+  )
+}
