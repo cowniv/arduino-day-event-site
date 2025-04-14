@@ -1,0 +1,5 @@
+[
+  { "id": "s1", "day": 1, "track": "Main Stage", "time": "09:00", "end": "09:30", "title": "Opening Program", "speakerId": null },
+  { "id": "s2", "day": 1, "track": "Main Stage", "time": "09:30", "end": "10:15", "title": "Getting started with sensors", "speakerId": "maya-reyes" },
+  { "id": "s3", "day": 1, "track": "Main Stage", "time": "10:30", "end": "11:15", "title": "From breadboard to the cloud", "speakerId": "jon-dizon" },
+  { "id": "s4", "day": 1, "track": "Community Hall", "time": "10:00", "end": "11:00", "title": "Project Showcase: Student Builds", "speakerId": null },
