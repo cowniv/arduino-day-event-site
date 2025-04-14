@@ -1,0 +1,3 @@
+[
+  { "id": "maya-reyes", "name": "Maya Reyes", "title": "Embedded Systems Engineer", "org": "Partner Company A", "topic": "Getting started with sensors", "bio": "Maya builds low-power sensor devices and loves teaching beginners how to read their first analog value. She started with a blinking LED in college and never stopped." },
+  { "id": "jon-dizon", "name": "Jon Dizon", "title": "IoT Developer", "org": "Partner Startup B", "topic": "From breadboard to the cloud", "bio": "Jon connects microcontrollers to dashboards for farms and small factories. He'll show how to send sensor data online with Wi-Fi boards." },
