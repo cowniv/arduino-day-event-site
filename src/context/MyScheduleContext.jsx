@@ -14,3 +14,10 @@ export function MyScheduleProvider({ children }) {
   return (
     <MyScheduleContext.Provider value={{ saved, isSaved, toggle, clear }}>
       {children}
+    </MyScheduleContext.Provider>
+  )
+}
+
+export function useMySchedule() {
+  return useContext(MyScheduleContext)
+}
