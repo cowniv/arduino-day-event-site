@@ -7,3 +7,7 @@
   { "id": "s6", "day": 1, "track": "Main Stage", "time": "14:00", "end": "14:45", "title": "Flood sensing on a student budget", "speakerId": "nico-ramos" },
   { "id": "s7", "day": 2, "track": "Main Stage", "time": "09:30", "end": "10:15", "title": "Designing your first PCB", "speakerId": "paolo-garcia" },
   { "id": "s8", "day": 2, "track": "Main Stage", "time": "10:30", "end": "11:15", "title": "Interactive art with LEDs", "speakerId": "lea-domingo" },
+  { "id": "s9", "day": 2, "track": "Community Hall", "time": "11:00", "end": "12:00", "title": "Community Meetup: Makers of Manila", "speakerId": null },
+  { "id": "s10", "day": 2, "track": "Community Hall", "time": "13:30", "end": "14:30", "title": "Lightning Talks", "speakerId": null },
+  { "id": "s11", "day": 2, "track": "Main Stage", "time": "16:00", "end": "16:30", "title": "Awarding & Closing", "speakerId": null }
+]
