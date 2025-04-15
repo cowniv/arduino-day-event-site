@@ -4,3 +4,5 @@
   { "id": "rica-tan", "name": "Rica Tan", "title": "Robotics Instructor", "org": "Partner School C", "topic": "Robots in the classroom", "bio": "Rica coaches high school robotics teams and designs hands-on lessons that make physics click." },
   { "id": "paolo-garcia", "name": "Paolo Garcia", "title": "Hardware Designer", "org": "Partner Lab D", "topic": "Designing your first PCB", "bio": "Paolo designs custom boards and will walk through moving a project off the breadboard and onto a real PCB." },
   { "id": "lea-domingo", "name": "Lea Domingo", "title": "Maker & Artist", "org": "Community Maker Space E", "topic": "Interactive art with LEDs", "bio": "Lea mixes code, light and fabric into interactive installations. Her talk is about creative coding with addressable LEDs." },
+  { "id": "nico-ramos", "name": "Nico Ramos", "title": "Student Researcher", "org": "Partner University F", "topic": "Flood sensing on a student budget", "bio": "Nico's thesis team built a low-cost water level monitor for their barangay. He'll share what worked and what broke." }
+]
