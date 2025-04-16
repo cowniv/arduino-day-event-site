@@ -34,3 +34,20 @@ export default function Home() {
       </section>
 
       <section>
+        <div className="section-head">
+          <h2>Featured speakers</h2>
+          <Link to="/speakers">See all →</Link>
+        </div>
+        <div className="grid">
+          {speakers.slice(0, 3).map((s) => (
+            <Link to={`/speakers/${s.id}`} key={s.id} className="card speaker-card">
+              <Avatar name={s.name} />
+              <h3>{s.name}</h3>
+              <p>{s.topic}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  )
+}
