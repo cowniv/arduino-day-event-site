@@ -16,3 +16,21 @@ export default function Home() {
     <>
       <section className="hero">
         <p className="eyebrow">April 2025 · Manila</p>
+        <h1>Arduino Day <span>Philippines</span></h1>
+        <p>Two days of talks, hands-on workshops and student projects celebrating open-source hardware.</p>
+        <div className="actions">
+          <Link to="/schedule" className="btn">View schedule</Link>
+          <Link to="/workshops" className="btn btn-outline">Reserve a workshop</Link>
+        </div>
+      </section>
+
+      <section className="stats">
+        {stats.map((s) => (
+          <div key={s.label}>
+            <strong>{s.value}</strong>
+            <span>{s.label}</span>
+          </div>
+        ))}
+      </section>
+
+      <section>
