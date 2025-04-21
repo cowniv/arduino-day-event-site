@@ -25,3 +25,16 @@ export default function MySchedule() {
       </div>
       {[1, 2].map((day) => {
         const daySessions = mine.filter((s) => s.day === day).sort((a, b) => a.time.localeCompare(b.time))
+        if (!daySessions.length) return null
+        return (
+          <section key={day}>
+            <h2>Day {day}</h2>
+            <div className="session-list">
+              {daySessions.map((s) => <SessionCard key={s.id} session={s} />)}
+            </div>
+          </section>
+        )
+      })}
+    </>
+  )
+}
