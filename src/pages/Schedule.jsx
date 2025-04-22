@@ -30,3 +30,18 @@ export default function Schedule() {
           >
             {d.label}
           </button>
+        ))}
+      </div>
+      <div className="chips">
+        {TRACKS.map((t) => (
+          <button key={t} className={track === t ? 'chip active' : 'chip'} onClick={() => setTrack(t)}>
+            {t}
+          </button>
+        ))}
+      </div>
+      <div className="session-list">
+        {sessions.length ? sessions.map((s) => <SessionCard key={s.id} session={s} />) : <p>No sessions here.</p>}
+      </div>
+    </>
+  )
+}
