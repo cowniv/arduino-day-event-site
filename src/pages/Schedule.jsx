@@ -14,3 +14,19 @@ export default function Schedule() {
 
   const sessions = schedule
     .filter((s) => s.day === day && (track === 'All' || s.track === track))
+    .sort((a, b) => a.time.localeCompare(b.time))
+
+  return (
+    <>
+      <h1>Schedule</h1>
+      <div className="tabs" role="tablist">
+        {DAYS.map((d) => (
+          <button
+            key={d.value}
+            role="tab"
+            aria-selected={day === d.value}
+            className={day === d.value ? 'tab active' : 'tab'}
+            onClick={() => setDay(d.value)}
+          >
+            {d.label}
+          </button>
