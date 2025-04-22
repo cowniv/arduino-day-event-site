@@ -6,3 +6,7 @@ export default function NotFound() {
       <p className="big">404</p>
       <h1>Looks like a loose wire.</h1>
       <p>We couldn't find that page.</p>
+      <Link to="/" className="btn">Back to home</Link>
+    </div>
+  )
+}
