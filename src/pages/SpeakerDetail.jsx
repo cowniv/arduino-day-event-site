@@ -20,3 +20,14 @@ export default function SpeakerDetail() {
         <Avatar name={speaker.name} size={140} />
         <div>
           <h1>{speaker.name}</h1>
+          <p className="lead">{speaker.title} · {speaker.org}</p>
+          <p>{speaker.bio}</p>
+        </div>
+      </div>
+      <h2>Sessions</h2>
+      <div className="session-list">
+        {sessions.map((s) => <SessionCard key={s.id} session={s} />)}
+      </div>
+    </>
+  )
+}
