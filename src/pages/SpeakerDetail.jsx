@@ -9,3 +9,14 @@ export default function SpeakerDetail() {
   const { id } = useParams()
   const speaker = speakers.find((s) => s.id === id)
 
+  if (!speaker) return <NotFound />
+
+  const sessions = schedule.filter((s) => s.speakerId === id)
+
+  return (
+    <>
+      <Link to="/speakers" className="back">← All speakers</Link>
+      <div className="speaker-detail">
+        <Avatar name={speaker.name} size={140} />
+        <div>
+          <h1>{speaker.name}</h1>
