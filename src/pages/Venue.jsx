@@ -18,3 +18,12 @@ export default function Venue() {
         <div className="venue-info">
           {tips.map((t) => (
             <div key={t.title} className="card">
+              <h3>{t.title}</h3>
+              <p>{t.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  )
+}
