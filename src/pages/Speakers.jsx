@@ -13,3 +13,10 @@ export default function Speakers() {
             <Avatar name={s.name} />
             <h3>{s.name}</h3>
             <p>{s.title}</p>
+            <small>{s.org}</small>
+          </Link>
+        ))}
+      </div>
+    </>
+  )
+}
