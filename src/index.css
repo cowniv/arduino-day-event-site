@@ -75,3 +75,41 @@ h2 { margin: 28px 0 14px; }
 .session-time { text-align: center; min-width: 60px; }
 .session-time small { display: block; color: var(--muted); }
 .session-body { flex: 1; }
+.session-body h3 { font-size: 1.05rem; margin: 4px 0; }
+
+/* speaker detail */
+.back { display: inline-block; margin-bottom: 20px; }
+.speaker-detail { display: flex; gap: 32px; align-items: center; }
+.speaker-detail .avatar { margin: 0; }
+
+/* workshops */
+.workshop { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.workshop img { width: 100%; height: 150px; object-fit: cover; }
+.workshop-body { padding: 18px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.workshop-body small { color: var(--muted); }
+.workshop-body p { font-size: 0.9rem; flex: 1; }
+.seats { margin: 8px 0; font-size: 0.85rem; }
+.bar { height: 8px; background: var(--border); border-radius: 999px; overflow: hidden; margin-bottom: 4px; }
+.bar div { height: 100%; background: var(--teal); }
+.low { color: var(--orange); font-weight: 600; }
+
+/* venue */
+.venue { display: grid; grid-template-columns: 2fr 1fr; gap: 18px; }
+.venue iframe { width: 100%; min-height: 380px; border: 1px solid var(--border); border-radius: var(--radius); }
+.venue-info { display: flex; flex-direction: column; gap: 12px; }
+
+/* empty + 404 */
+.empty { text-align: center; padding: 60px 0; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.big { font-size: 6rem; font-weight: 700; color: var(--teal); line-height: 1; }
+
+.footer { text-align: center; padding: 24px; color: var(--muted); border-top: 1px solid var(--border); font-size: 0.85rem; }
+
+@media (max-width: 760px) {
+  .menu-btn { display: block; }
+  .nav { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; background: var(--teal); padding: 16px; }
+  .nav.open { display: flex; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .session { flex-wrap: wrap; }
+  .speaker-detail { flex-direction: column; text-align: center; }
+  .venue { grid-template-columns: 1fr; }
+}
