@@ -30,3 +30,18 @@ export default function Workshops() {
                 <p>{w.description}</p>
                 <div className="seats">
                   <div className="bar"><div style={{ width: `${percent}%` }} /></div>
+                  <span className={left <= 5 ? 'low' : ''}>
+                    {full ? 'Fully booked' : `${left} of ${w.seats} seats left`}
+                  </span>
+                </div>
+                <button className={mine ? 'btn btn-outline' : 'btn'} disabled={full} onClick={() => toggle(w.id)}>
+                  {mine ? 'Cancel reservation' : full ? 'Full' : 'Reserve a seat'}
+                </button>
+              </div>
+            </article>
+          )
+        })}
+      </div>
+    </>
+  )
+}
