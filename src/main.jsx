@@ -9,3 +9,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <MyScheduleProvider>
+        <App />
+      </MyScheduleProvider>
+    </BrowserRouter>
+  </React.StrictMode>
+)
