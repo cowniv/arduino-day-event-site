@@ -16,3 +16,12 @@ After designing the Arduino Day PH pages, I rebuilt my own version as a multi-pa
 ### Run
 ```bash
 npm install
+npm run dev
+```
+
+### What I practiced
+- React Router v6 (nested routes, `useParams`, `NavLink`, catch-all route)
+- Importing JSON as data
+- Context for state shared across pages
+- A `useLocalStorage` custom hook
+- Vite
